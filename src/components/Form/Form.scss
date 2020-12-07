@@ -1,0 +1,20 @@
+.form-container {
+	margin: 0 auto;
+	width: 400px;
+	div {
+		margin-bottom: 5px;
+		label {
+			display: inline-block;
+			width: 150px;
+			text-align: right;
+			margin-right: 5px;
+		}
+		input {
+			width: 200px;
+		}
+	}
+	button {
+		display: block;
+		margin: 20px auto;
+	}
+}
