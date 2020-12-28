@@ -8,9 +8,9 @@ import { Form } from '../Form';
 import { CommitList } from '../CommitList';
 import './App.scss';
 
-export interface StateProps {};
+export interface Props {};
 
-export const App: React.FC<StateProps & { children?: React.ReactNode }> = () => {
+export const App: React.FC<Props & { children?: React.ReactNode }> = () => {
   return (
     <Router>
       <div>
@@ -25,7 +25,7 @@ export const App: React.FC<StateProps & { children?: React.ReactNode }> = () => 
           <Route exact path="/">
             <Form />
           </Route>
-          <Route path="/commit-list/:foo">
+          <Route path="/commit-list/:foo" component={CommitList}>
             <CommitList />
           </Route>
         </Switch>

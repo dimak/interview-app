@@ -1,11 +1,11 @@
 import React from "react";
 import { useParams, useLocation } from 'react-router-dom';
 
-export interface StateProps {
+export interface Props {
 
 }
 
-export const CommitList: React.FC<StateProps & { children?: React.ReactNode }> = () => {
+export const CommitList: React.FC<Props & { children?: React.ReactNode }> = () => {
 
 	const params = useParams();
 	const queryString = useLocation().search || 'null';

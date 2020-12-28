@@ -2,11 +2,11 @@ import React from "react";
 import { useHistory } from 'react-router-dom';
 import './Form.scss';
 
-export interface StateProps {
+export interface Props {
 
 }
 
-export const Form: React.FC<StateProps & { children?: React.ReactNode }> = () => {
+export const Form: React.FC<Props & { children?: React.ReactNode }> = () => {
 	const history = useHistory();
 
 	return (
