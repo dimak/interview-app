@@ -25,9 +25,7 @@ export const App: React.FC<Props & { children?: React.ReactNode }> = () => {
           <Route exact path="/">
             <Form />
           </Route>
-          <Route path="/commit-list/:foo" component={CommitList}>
-            <CommitList />
-          </Route>
+          <Route path="/commit-list/:foo" component={CommitList} />
         </Switch>
       </div>
     </Router>

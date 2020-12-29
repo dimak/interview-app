@@ -2,9 +2,7 @@ import React from "react";
 import { useHistory } from 'react-router-dom';
 import './Form.scss';
 
-export interface Props {
-
-}
+export interface Props {}
 
 export const Form: React.FC<Props & { children?: React.ReactNode }> = () => {
 	const history = useHistory();

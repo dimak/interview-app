@@ -1,15 +1,12 @@
 import React from "react";
-import { useParams, useLocation } from 'react-router-dom';
+import { RouteComponentProps } from 'react-router-dom';
 
-export interface Props {
+interface URLParams {
+	foo: string;
+};
+type Props = RouteComponentProps<URLParams>;
 
-}
-
-export const CommitList: React.FC<Props & { children?: React.ReactNode }> = () => {
-
-	const params = useParams();
-	const queryString = useLocation().search || 'null';
-
+export const CommitList: React.FC<Props & { children?: React.ReactNode }> = (props) => {
 	return (
 		<>
 			<h1>Repo name</h1>
@@ -20,10 +17,8 @@ export const CommitList: React.FC<Props & { children?: React.ReactNode }> = () =
 				<li><u>Author</u> - commit hash</li>
 				<li><u>Author</u> - commit hash</li>
 			</ul>
-			params:
-			<pre>{JSON.stringify(params)}</pre>
-			query string:
-			<pre>{queryString}</pre>
+			props:
+			<pre>{JSON.stringify(props, null, 2)}</pre>
 		</>
 	)
 }
