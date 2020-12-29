@@ -19,6 +19,8 @@
 
 You will be using Github api in order to complete this task. Please use this [documentation](https://developer.github.com/v3/repos/commits/).
 
+Sample route: https://api.github.com/repos/facebook/react-native/commits
+
 # Scripts
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
